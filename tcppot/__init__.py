@@ -2,12 +2,12 @@ import logging
 import threading
 from socket import socket, timeout
 
+
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-
 class HoneyPot(object):
-
     def __init__(self, bind_ip, ports, log_filepath):
         if len(ports) < 1:
             raise Exception("There are no ports provided.")
@@ -19,7 +19,6 @@ class HoneyPot(object):
         self.log_filepath = log_filepath
         self.listener_threads = {}
         self.logger = self.prepare_logger()
-
         self.logger.info("Initializing Honeypot!......")
         self.logger.info("Ports: %s" % self.ports)
         self.logger.info("Logfile_path: %s" % self.log_filepath)
@@ -31,6 +30,7 @@ class HoneyPot(object):
             data = client_socket.recv(64)
             self.logger.info("Data received on port: %s: From %s:%d: %s" % (port, ip, remote_port, data))
             client_socket.send("Access Denied!....\n".encode('utf8'))
+
         except timeout:
             pass
         client_socket.close()

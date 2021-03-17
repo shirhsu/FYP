@@ -1,5 +1,5 @@
-nanopot.ini
-nanopot.log
+tcppot.ini
+tcppot.log
 venv
 *.egg-info
 dist/

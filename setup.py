@@ -15,5 +15,5 @@ setup(
     author='Shirshu',
     packages=['tcppot'],
     zip_safe=False,
-    Install_requires=[]
+    Install_requires="requirement.txt"
 )
