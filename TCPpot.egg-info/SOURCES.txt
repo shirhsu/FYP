@@ -1,0 +1,8 @@
+setup.py
+TCPpot.egg-info/PKG-INFO
+TCPpot.egg-info/SOURCES.txt
+TCPpot.egg-info/dependency_links.txt
+TCPpot.egg-info/not-zip-safe
+TCPpot.egg-info/top_level.txt
+tcppot/__int__.py
+tcppot/__main__.py

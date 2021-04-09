@@ -1,0 +1,7 @@
+package: tcppot
+version: 1.0
+maintainer:Shirshu
+Description:Simple TCP honeypot that uses python 3
+sourcecodes: Email in shirshaks.2000@gmail.com for the codes
+Architecture:all
+Depends:python3

@@ -1,0 +1,6 @@
+#!/bin/bash
+useradd tcppot
+mkdir /home/tcppot
+python3 -m pip install /opt/tcppot-1.0.tar.gz
+systemctl enable tcppot
+

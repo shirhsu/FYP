@@ -1,0 +1,13 @@
+[Unit]
+Description=TcPpot honeypot
+After=network.target
+
+[Service]
+Type=simple
+User=tcppot
+WorkingDirectory=/home/tcppot
+ExecStart=sudo python3 -m tcppot /etc/tcppot.ini
+Restart=on-failure
+
+[Install]
+WantedBy=mult-user.target
